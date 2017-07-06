@@ -1,7 +1,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "notifly",
+    name: "circly",
     targets: [
         Target(name: "App"),
         Target(name: "Run", dependencies: ["App"]),
