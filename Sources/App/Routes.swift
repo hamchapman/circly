@@ -19,7 +19,9 @@ extension Droplet {
         }
 
         get("description") { req in return req.description }
-        
-        try resource("posts", PostController.self)
+
+        let instanceGroup = grouped("instances", ":instance_id")
+
+        try instanceGroup.resource("clients", ClientController.self)
     }
 }
